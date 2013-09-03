@@ -4,20 +4,44 @@
 		body {
 			background: white;
 		}
+		.sectionhead {
+			float:left;
+			clear:right;
+		}
+		.contact {
+			float:right;
+		}
+		.clear {
+			clear:both;
+		}
 		#resume {
 			background: white;
-			font-family: "Helvetica","Arial",sans-serif;
+			font-family: "Helvetica Neue","Arial",sans-serif;
 			width: 60%;
-			margin: auto;
+			margin-left:auto;
+			margin-right:auto;
 			padding:3px;
-			box-shadow: 10px 5px 10px black;
+			padding-right:1em;
+			box-shadow: 10px 5px 10px #666;
 			border-radius: 10px;
+		}
+		.job{
+			text-align: right;
+		}
+		ul{
+			clear:right;
 		}
 		li {
 			float: left;
 			width: 33%;
+			text-align: right;
 		}
-		li:before{}
+		h1,h3 {
+			margin-top: 6px;
+		}
+		#involvement{
+			height:30px;
+		}
 		@media print {
 			body{
 				background: white;
@@ -29,28 +53,30 @@
 	</style>
 </head>
 <body><div id="resume">
-	<div id="heading"><h3>Shane Homan</h3>
-		Tacoma, WA 98406<br />
-		(253) 334-5205<br />
+	<div id="heading"><h1 class="sectionhead">Shane Homan</h1>
+	<div class="contact">
+		253.334.5205<br />
 		shane.homan@gmail.com<br />
-		github.com/shoman42<br />
+		github.com/shoman42<br /></div>
 	</div>
-	<div id="education">
-		<h3>Education</h3>
-		<h4>University of Washington</h4>
-		Coursework was primarily developed in Java utilizing object-oriented design and emphasizing working as a team.
+	<div id="education" class="clear">
+		<h3 class="sectionhead">Education</h3>
+		<div class="job">
+		University of Washington, Tacoma, WA<br />
+		Bachelor of Arts, Computer Science</div><br />
 	</div>
-	<div id="skills">
-		<h3>Skills</h3>
-		<ul>
+	<div id="skills" class="clear">
+		<h3 class="sectionhead" style="position:absolute;">Skills</h3>
+		<div><ul>
 			<li>Problem Solving </li><li>Quick Study </li><li>Great with People </li><li>Detail Oriented </li><li>Experienced Tutor </li><li>Run a kitchen </li><li>HTML5 </li><li>CSS3 </li><li>PHP </li><li>Javascript </li><li>JQuery </li><li>Java </li><li>C# </li><li>Asp.NET </li><li>Lua </li><li>Lisp </li><li>Unit Testing </li><li>SQL Server </li><li>Android </li><li>Windows 3.1-8 </li><li>Mac OSX </li><li>Linux </li><li>Microsoft Word </li><li>Microsoft Excel </li><li>Microsoft Access </li><li>Social Media </li><li>Wordpress </li><li>Project Management </li><li>Computer maintenance </li><li>Technical Support </li></ul>
-		</div><br style="clear:both;" />
-		<div id="experience">
-			<h3>Experience</h3>
+			</div>
+	</div>
+		<div id="experience" class="clear">
+			<h3 class="sectionhead">Experience</h3>
 			<div class="job">
 			<h4>Owner Operator<br />
 			The Shane Homan Experience, Tacoma, WA</h4>
-			Self-Employment as a web designer, on-call IT guy, and consultant. New website design and development, as well as modifications to existing sites.  Fix and support computers and other equipment.</div>
+			New website design and development, as well as modifications to existing sites.  Fix and support computers and other equipment.</div>
 			<div class="job">
 			<h4>Internet Marketing Intern (December 2012 - May 2013)<br />
 			The Grand Cinema, Tacoma, Wa</h4>
@@ -58,17 +84,19 @@
 			<div class="job">
 			<h4>Sous Chef (February 2013 - May 2013)<br />
 			It's Amore, Tacoma, Wa</h4>
-			Worked under the head chef's direction to run a small Italian restaurant.  Handled all tasks: preparation, cooking, cleaning, and managing inventory.  Worked solo as needed.</div>
+			Preparation, cooking, cleaning, and managing inventory.  Worked independently and with a team.</div>
 			<div class="job">
 			<h4>Technology Specialist (April 2012 - November 2012)<br />
 			Jeannie Darneille for State Senate, Tacoma, Wa</h4>
-			Managed Rep. Darneille's online and technical needs during a successful campaign.  Created new features for her website.  Managed Voter, Volunteer, and Contributor databases.  Updated and maintained contributed hardware, peripherals, and software. </div>
+			Managed Rep. Darneille's online and technical needs during a successful campaign.  Created new features for her website.  Managed and analyzed databases.  Updated and maintained contributed hardware, peripherals, and software. </div>
 			<div class="job">
 			<h4>State Park Aide (August 2010 - September 2010)<br />
 			Millersylvania State Park, WA</h4>
-			Opened, cleaned and maintained the park.  Helped park guests with their needs (directions, questions, reservations).  Worked independently while assisting Park Rangers with jobs around the park.</div>
-			<div class="job">
-			<h4>Miscellaneous Experience</h4>
-			Testing video games and console interfaces, Sports officiating, Tofu making, Catering, Modding video games, Belaying climbers, young and old</div>
-								</div></div>
-							</body></html>
+			Opened, cleaned and maintained the park.  Helped guests with any needs (directions, questions, reservations).  Worked independently while assisting Park Rangers with jobs around the park.</div>
+		</div>
+		<div id="involvement" class="clear">
+			<h3 class="sectionhead" style="margin-top:0px;">Involvement</h3>
+			<div class="job" style="margin-top:10px;">Sports officiating, Catering, Modding video games, Belaying rock climbers</div>
+		</div>
+	</div>
+</body></html>
