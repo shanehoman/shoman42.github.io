@@ -1,0 +1,55 @@
+body {
+			background-image: url('../images/bg-color.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.sectionhead {
+			float:left;
+			clear:right;
+		}
+		.contact {
+			float:right;
+		}
+		.clear {
+			clear:both;
+		}
+		#content {
+			background: rgba(255,255,255,.80);
+			font-family: "Helvetica Neue","Arial",sans-serif;
+			width: 60%;
+			margin-left:auto;
+			margin-right:auto;
+			padding:3px;
+			padding-right:1em;
+			box-shadow: 10px 5px 10px #666;
+			border-radius: 10px;
+			min-height: 600px;
+		}
+		.sectionitem{
+			margin-left:auto;
+			width:80%;
+		}
+		ul{
+			padding:0px;
+		}
+		li {
+			float: left;
+			width: 33%;
+		}
+		h1,h3 {
+			margin-top: 6px;
+		}
+		#involvement{
+			height:30px;
+		}
+		@media print {
+			body{
+				background-image:url('../images/bg-bw.png');
+				background-size:cover;
+				
+			background-repeat: no-repeat;
+			}
+			#content {
+				width:95%;
+			}
+		}
