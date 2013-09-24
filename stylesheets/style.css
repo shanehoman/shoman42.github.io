@@ -13,8 +13,9 @@ body {
 		.clear {
 			clear:both;
 		}
-		.small{
+		.date{
 			font-size:70%;
+			text-align: right;
 		}
 		#content {
 			font-family: "Helvetica","Arial",sans-serif;
@@ -24,6 +25,9 @@ body {
 			padding:3px;
 			padding-right:1em;
 			min-height: 600px;
+				background: rgba(255,255,255,.80);	
+			box-shadow: 10px 5px 10px #666;
+			border-radius: 10px;			
 		}
 		.sectionitem{
 			margin-left:auto;
@@ -44,17 +48,15 @@ body {
 		}
 		@media screen {
 			#content {
-				background: rgba(255,255,255,.80);	
-			box-shadow: 10px 5px 10px #666;
-			border-radius: 10px;			
 			}
 		}
 		@media print {
 			body{
-				background-image:url('../images/bg-bw.png');
+				/*background-image:url('../images/bg-bw.png');
 				background-size:cover;
 				
-			background-repeat: no-repeat;
+			background-repeat: no-repeat;*/
+			background:white;
 			}
 			#content {
 				width:95%;
