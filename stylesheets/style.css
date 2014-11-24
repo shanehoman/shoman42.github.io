@@ -38,6 +38,7 @@ body {
 			width:30%;
 			margin:auto;
 			display:inline-block;
+			vertical-align:top;
 		}
 		#list1{
 			margin-left:0px;
